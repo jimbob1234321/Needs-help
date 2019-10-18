@@ -1,0 +1,772 @@
+#include <iostream>
+#include <iomanip>
+#include <ctime>
+#include<cmath>
+#include <cstdlib>
+#include <string>
+using namespace std;
+//Delte all ones in question answer
+int main()
+{
+	//Helps randomize the number
+	srand(time(NULL));
+	int WannaPlay;
+	int lifes = 3;
+	int lrandO;
+	float questionOneAnswer;
+	//Explains the game
+	cout << "Welcome to the quest of the quest for the ultimate meme!";
+	cout << "\n\nThe plot: Your a famous meme youtuber and one day you notice that something stole your laptop that had the greatest meme you could think of. When you were looking around you saw a mysterious figure and he had something it was your LAPTOP! You run after them and they run into a temple.";
+	cout << "\n(Also the exponent sign will be this ^. Also division is this /. Also for best gameplay play on fullscreen) ";
+	cout << "\nDo you want to enter the temple? (1 for yes and 2 for no) ";
+	cin >> WannaPlay;
+	//Funny type ending but still bad
+	if (WannaPlay == 2)
+	{
+		cout << "You say 'Im not doing this today' and go back home to go back to sleep and when you do since you didn't post anything you lose subsribers.";
+		cout << "\nLazy ending.(Hint next time don't go back to sleep)";
+		return 0;
+	}
+	if (WannaPlay != 1 && 2)
+	{
+		cout << "\n'Haha very funny' I appear with a command menu and delte you from existiance";
+		return 0;
+	}
+	cout << "\n\nWhen you enter  the temple to door closes behind you and locks look like you have to go through the entrie temple before it unlocks. you also look around and see drawings of \n memes on the wall and you notice this is a mystical meme temple. ";
+	cout << "\nYou start heading to the end of the room and ";
+
+
+
+	//Randomized rooms
+	lrandO = (rand() % 10);
+	switch (lrandO)
+	{
+
+	case 0:
+		cout << "Sans appears infront of you and summons a gasterblaster and trys to blast you away. " << endl;
+		break;
+	case 1:
+		cout << "A Creeper appears and attempts to blow up and kill you. " << endl;
+		break;
+	case 2:
+		cout << "Luigi Appears with a spiny shell from mario kart and attempts to hit you with it." << endl;
+		break;
+	case 3:
+		cout << "Waluigi appears and runs after you with a tennis racket. " << endl;
+		break;
+	case 4:
+		cout << "John cena appears infront of you and attempts to pin you down and kill you." << endl;
+		break;
+	case 5:
+		cout << "Dio appears with his stand the world. " << endl;
+		break;
+	case 6:
+		cout << "Darth kermit appears and pulls out his lightsaber. " << endl;
+		break;
+	case 7:
+		cout << "Communist Elmo appears and starts dancing. " << endl;
+		break;
+	case 8:
+		cout << "You see a furret(The pokemon) walking. " << endl;
+		break;
+	case 9:
+		cout << "Joker from persona 5 appears and summons his persona arsene." << endl;
+		break;
+	case 10:
+		cout << "A kid with a sword appears and screams 'I have the power of god and anime on my side' and runs towards you. " << endl;
+		break;
+	}
+
+
+	//First question
+	cout << "Question one (5^3) / 5.  What is the answer? ";
+	cin >> questionOneAnswer;
+	//The result of the question if you get it wrong or correct
+	
+	if ((questionOneAnswer == 25) && (lrandO == 0))
+	{
+		//if you get it correct
+		cout << "\nYou dodge the attack and kick him causing him to die since he only has one hp and you kick his dust and move onto the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 0))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his gaster blaster casuing you to die  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 1))
+	{
+		//if you get it correct
+		cout << "\nYou summon captain sparklezs and he starts singing revenge and it strikes fear in the creeper casuing the creeper to run away and you say 'Thank you captain sparklez' then you go to the next room ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 1))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 2))
+	{
+		//if you get it correct
+		cout << "\nYou stay still and wait for him to throw the spiny shell and the spiny shell goes after him and kills him since he was infront of you and you go to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 2))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 3))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a empty assist trophy and trap walugi in it then you go to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 3))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe charges at you and kills you using his tennis racket " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 4))
+	{
+		//if you get it correct
+		cout << "\nYou dodge and RKO him then you snap his neck casuing him to die after that you move onto the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 4))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe pins you then snaps your neck causing you to die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 5))
+	{
+		//if you get it correct
+		cout << "\nJotaro appears and fights dio with his stand and while the fight happens you sneak away to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 5))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 6))
+	{
+		//if you get it correct
+		cout << "\nYou find your own lightsaber and fight him and a lava trap opens up and you kick kermit into it then run to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 6))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe kills you with his lightsaber " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 7))
+	{
+		//if you get it correct
+		cout << "\nYou challenge him to a dance off and you start doing the tourture dance from jojo part 5 and elmo dies since there was a beam of light in his eye then you take his hat and put it on going to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 7))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 8))
+	{
+		//if you get it correct
+		cout << "\nYou watch it and a lava trip open underneath it but it doesnt fall in and you notice that its a hologram so you dodge the lava trap then you go to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 8))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou follow him and a lava trap opens underneath you two and you fall in the lava seeing the furret dissaper since it was a hologram " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 9))
+	{
+		//if you get it correct
+		cout << "\nYou dodge one of his physical attacks which using a physical attack he loses some health and you hit him on the head with a mace you found on the ground killing him then you take a quick breather after that you move to the next room. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 9))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe gets a direct hit on you killing you from the sheer strength of the attack " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionOneAnswer == 25) && (lrandO == 10))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a sword you found on the ground and you block his attack and hit him in the back with the sword killing him. ";
+	}
+	else if ((questionOneAnswer != 25) && (lrandO == 10))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his sword pierceing your skin and you die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	float questionAnswerTwo;
+	float lifesReamainingIfYouMissedOneAlreadyAndMissThisOne = 1;
+	
+	lrandO = (rand() % 10);
+	switch (lrandO)
+	{
+
+	case 0:
+		cout << "Sans appears infront of you and summons a gasterblaster and trys to blast you away. " << endl;
+		break;
+	case 1:
+		cout << "A Creeper appears and attempts to blow up and kill you. " << endl;
+		break;
+	case 2:
+		cout << "Luigi Appears with a spiny shell from mario kart and attempts to hit you with it." << endl;
+		break;
+	case 3:
+		cout << "Waluigi appears and runs after you with a tennis racket. " << endl;
+		break;
+	case 4:
+		cout << "John cena appears infront of you and attempts to pin you down and kill you." << endl;
+		break;
+	case 5:
+		cout << "Dio appears with his stand the world. " << endl;
+		break;
+	case 6:
+		cout << "Darth kermit appears and pulls out his lightsaber. " << endl;
+		break;
+	case 7:
+		cout << "Communist Elmo appears and starts dancing. " << endl;
+		break;
+	case 8:
+		cout << "You see a furret(The pokemon) walking. " << endl;
+		break;
+	case 9:
+		cout << "Joker from persona 5 appears and summons his persona arsene." << endl;
+		break;
+	case 10:
+		cout << "A kid with a sword appears and screams 'I have the power of god and anime on my side' and runs towards you. " << endl;
+		break;
+	}
+
+
+	//Second question
+	cout << "Question two (50^2) / 2 * 9 + 2.  What is the answer? ";
+	cin >> questionAnswerTwo;
+	//The result of the question if you get it wrong or correct
+	if ((questionAnswerTwo == 11252) && (lrandO == 0))
+	{
+		//if you get it correct
+		cout << "\nYou dodge the attack and kick him causing him to die since he only has one hp and you kick his dust and move onto the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 0))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his gaster blaster casuing you to die  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 0) && (questionOneAnswer != 25))
+	{
+		//if you get it wrong
+		
+		cout << "\nHe hits you with his gaster blaster casuing you to die  " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 1))
+	{
+		//if you get it correct
+		cout << "\nYou summon captain sparklezs and he starts singing revenge and it strikes fear in the creeper casuing the creeper to run away and you say 'Thank you captain sparklez' then you go to the next room ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 1) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 1) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 2) && (questionOneAnswer == 25))
+	{
+		//if you get it correct
+		cout << "\nYou stay still and wait for him to throw the spiny shell and the spiny shell goes after him and kills him since he was infront of you and you go to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 2) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 2) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you  " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 3))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a empty assist trophy and trap walugi in it then you go to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 3) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe charges at you and kills you using his tennis racket " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 3) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong for a second time
+		
+		cout << "\nHe charges at you and kills you using his tennis racket " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 4))
+	{
+		//if you get it correct
+		cout << "\nYou dodge and RKO him then you snap his neck casuing him to die after that you move onto the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 4) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe pins you then snaps your neck causing you to die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 4) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong again after the first one
+		
+		cout << "\nHe pins you then snaps your neck causing you to die " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 5) && (questionOneAnswer == 25))
+	{
+		//if you get it correct
+		cout << "\nJotaro appears and fights dio with his stand and while the fight happens you sneak away to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 5) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 5) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 6))
+	{
+		//if you get it correct
+		cout << "\nYou find your own lightsaber and fight him and a lava trap opens up and you kick kermit into it then run to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 6) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe kills you with his lighsaber " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 6) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nHe kills you with his lighsaber " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 7))
+	{
+		//if you get it correct
+		cout << "\nYou challenge him to a dance off and you start doing the tourture dance from jojo part 5 and elmo dies since there was a beam of light in his eye then you take his hat and put it on going to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 7) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 7) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 8))
+	{
+		//if you get it correct
+		cout << "\nYou watch it and a lava trip open underneath it but it doesnt fall in and you notice that its a hologram so you dodge the lava trap then you go to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 8) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou follow him and a lava trap opens underneath you two and you fall in the lava seeing the furret dissaper since it was a hologram " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 8) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nYou follow him and a lava trap opens underneath you two and you fall in the lava seeing the furret dissaper since it was a hologram " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 9))
+	{
+		//if you get it correct
+		cout << "\nYou dodge one of his physical attacks which using a physical attack he loses some health and you hit him on the head with a mace you found on the ground killing him then you take a quick breather after that you move to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 9) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe gets a direct hit on you killing you from the sheer strength of the attack " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 9) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+	
+		cout << "\nHe gets a direct hit on you killing you from the sheer strength of the attack " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 10))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a sword you found on the ground and you block his attack and hit him in the back with the sword killing him. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 10) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his sword pierceing your skin and you die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 10) && ((questionOneAnswer != 25)))
+	{
+		//if you get it wrong
+		
+		cout << "\nHe hits you with his sword pierceing your skin and you die " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	lrandO = (rand() % 10);
+	switch (lrandO)
+	{
+
+	case 0:
+		cout << "Sans appears infront of you and summons a gasterblaster and trys to blast you away. " << endl;
+		break;
+	case 1:
+		cout << "A Creeper appears and attempts to blow up and kill you. " << endl;
+		break;
+	case 2:
+		cout << "Luigi Appears with a spiny shell from mario kart and attempts to hit you with it." << endl;
+		break;
+	case 3:
+		cout << "Waluigi appears and runs after you with a tennis racket. " << endl;
+		break;
+	case 4:
+		cout << "John cena appears infront of you and attempts to pin you down and kill you." << endl;
+		break;
+	case 5:
+		cout << "Dio appears with his stand the world. " << endl;
+		break;
+	case 6:
+		cout << "Darth kermit appears and pulls out his lightsaber. " << endl;
+		break;
+	case 7:
+		cout << "Communist Elmo appears and starts dancing. " << endl;
+		break;
+	case 8:
+		cout << "You see a furret(The pokemon) walking. " << endl;
+		break;
+	case 9:
+		cout << "Joker from persona 5 appears and summons his persona arsene." << endl;
+		break;
+	case 10:
+		cout << "A kid with a sword appears and screams 'I have the power of god and anime on my side' and runs towards you. " << endl;
+		break;
+	}
+	float Gameover = 0;
+	float questionAnswerThree;
+	//Third question
+	cout << "Question Three (3^3) + (5^3).  What is the answer? ";
+	cin >> questionAnswerThree;
+	//The result of the question if you get it wrong or correct
+	if ((questionAnswerThree != 157) && (lrandO == 0) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou dodge the attack and kick him causing him to die since he only has one hp and you kick his dust and move onto the next room. ";
+	}
+	else if ((questionAnswerThree == 157) && (lrandO == 0) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his gaster blaster casuing you to die  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 0) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+
+		cout << "\nHe hits you with his gaster blaster casuing you to die " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 0) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252)))
+	{
+		cout << "\nHe hits you with his gaster blaster casuing you to die";
+		cout << "\nYou lost all your lifes. \nGAME OVER";
+		return 0;
+	}
+	if ((questionAnswerThree != 157) && (lrandO == 1) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou summon captain sparklezs and he starts singing revenge and it strikes fear in the creeper casuing the creeper to run away and you say 'Thank you captain sparklez' then you go to the next room ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 1) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 1) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 1) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nYou attempt to sing like captain sparklez so you start by saying 'Creeper Aww man' but before you could continue singing revenge the creeper explodes ontop of you ";
+		cout << "\nYou lost all your lifes. \nGAMEOVER ";
+		return 0;
+	}
+	if ((questionAnswerThree != 157) && (lrandO == 2) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou stay still and wait for him to throw the spiny shell and the spiny shell goes after him and kills him since he was infront of you and you go to the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 2) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you  " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 2) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you  " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 2) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nYou start running and he throws The spiny shell when you pass and the spiny shell kills you";
+		cout << "\nYou lost all your lifes. \nGAME OVER";
+		return 0;
+	}
+	if ((questionAnswerThree == 157) && (lrandO == 3) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a empty assist trophy and trap walugi in it then you go to the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 3) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe charges at you and kills you using his tennis racket " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 3) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong for a second time
+
+		cout << "\nHe charges at you and kills you using his tennis racket " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 3) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nHe charges at you and kills you using his tennis racket ";
+		cout << "\nYou lost all your lives. \nGAMEOVER";
+		return 0;
+	}
+	
+	if ((questionAnswerThree == 157) && (lrandO == 4) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou dodge and RKO him then you snap his neck casuing him to die after that you move onto the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 4) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe pins you then snaps your neck causing you to die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 4) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong again after the first one
+
+		cout << "\nHe pins you then snaps your neck causing you to die " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 4) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nHe pins you then snaps your neck causing you to die ";
+		cout << "\nYou lost all your lives, \nGAMEOVER";
+			return 0;
+	}
+	if ((questionAnswerThree == 157) && (lrandO == 5) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nJotaro appears and fights dio with his stand and while the fight happens you sneak away to the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 5) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree == 157) && (lrandO == 5) && ((questionOneAnswer == 25) || (questionAnswerTwo == 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 5) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nDio pauses time by screaaming 'ZA WURDO' and hits you with a roadroller ";
+		cout << "\nYou lost all your lifes. \nGAME OVER";
+		return 0;
+	}
+	if ((questionAnswerThree == 157) && (lrandO == 6) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou find your own lightsaber and fight him and a lava trap opens up and you kick kermit into it then run to the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 6) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe kills you with his lighsaber killing you " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 6) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+
+		cout << "\nHe kills you with his lighsaber " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 6) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		cout << "\nHe kills you with his lightsaber ";
+		cout << "\nYou lost all your lives. \nGAMEOVER";
+		return 0;
+	}
+	if ((questionAnswerThree == 157) && (lrandO == 7) && ((questionOneAnswer == 25) && (questionAnswerTwo == 11252)))
+	{
+		//if you get it correct
+		cout << "\nYou challenge him to a dance off and you start doing the tourture dance from jojo part 5 and elmo dies since there was a beam of light in his eye then you take his hat and put it on going to the next room. ";
+	}
+	else if ((questionAnswerThree == 157) && (lrandO == 7) && ((questionOneAnswer != 25) && (questionAnswerTwo != 11252)))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 7) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252) && (Gameover == 1)))
+	{
+		//if you get it wrong
+
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+	}
+	else if ((questionAnswerThree != 157) && (lrandO == 7) && ((questionOneAnswer != 25) || (questionAnswerTwo != 11252)))
+	{
+		cout << "\nYou challenge him to a dance off and you start doing the defult dance from fortnite and elmo kills you from you being not as good as dancing as him ";
+		cout << "\nYou lost all your lifes. \nGAMEOVER";
+			return 0;
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 8))
+	{
+		//if you get it correct
+		cout << "\nYou watch it and a lava trip open underneath it but it doesnt fall in and you notice that its a hologram so you dodge the lava trap then you go to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 8) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nYou follow him and a lava trap opens underneath you two and you fall in the lava seeing the furret dissaper since it was a hologram " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 8) && ((questionOneAnswer < 25) || (questionOneAnswer > 25)))
+	{
+		//if you get it wrong
+
+		cout << "\nYou follow him and a lava trap opens underneath you two and you fall in the lava seeing the furret dissaper since it was a hologram " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 9))
+	{
+		//if you get it correct
+		cout << "\nYou dodge one of his physical attacks which using a physical attack he loses some health and you hit him on the head with a mace you found on the ground killing him then you take a quick breather after that you move to the next room. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 9) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe gets a direct hit on you killing you from the sheer strength of the attack " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 9) && ((questionOneAnswer < 25) || (questionOneAnswer > 25)))
+	{
+		//if you get it wrong
+
+		cout << "\nHe gets a direct hit on you killing you from the sheer strength of the attack " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+	if ((questionAnswerTwo == 11252) && (lrandO == 10))
+	{
+		//if you get it correct
+		cout << "\nYou pull out a sword you found on the ground and you block his attack and hit him in the back with the sword killing him. ";
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 10) && (questionOneAnswer == 25))
+	{
+		//if you get it wrong
+		lifes = 2;
+		cout << "\nHe hits you with his sword pierceing your skin and you die " << "\nLifes left " << lifes << "\nSomehow you respwan in the next room. ";
+
+	}
+	else if ((questionAnswerTwo != 11252) && (lrandO == 10) && ((questionOneAnswer < 25) || (questionOneAnswer > 25)))
+	{
+		//if you get it wrong
+
+		cout << "\nHe hits you with his sword pierceing your skin and you die " << "\nLifes left " << lifesReamainingIfYouMissedOneAlreadyAndMissThisOne << "\nSomehow you respwan in the next room. ";
+
+	}
+}
